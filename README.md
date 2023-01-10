@@ -4,6 +4,15 @@ Farmup is a web-app that helps farmers get trusted and worthy market for their c
 The motto of this web app is to bring growth in agricultural field
 
 
+### Problem Statement
+- There is a communication gap between farmers and  the lenders.
+- Poor Product (crop/harvest) management.
+ 
+### Solution
+- Improve communication by building a market place which will help the farmers get a lot of price range which the lenders are willing to offer them, and the farmers can pick the best price for their crops.
+- Predict & manage crop failure (using soil APIs and an automated management system).
+
+
 ![farmup logo](logo.jpg)
 
 ### Contribute
