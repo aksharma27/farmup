@@ -8,20 +8,21 @@ const dbconn = require("./config/db");
 
 
 
+
+dbconn();
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded("extended: true"));
+app.set('view engine', 'ejs');
+app.use(express.static("public"));
 
-dbconn();
 
 app.get('/api/test', (req, res)=> {
-    res.sendFile({
-        time : new Date(), 
-    })
+    res.render('index')
 });
 
 app.get('/api/home', (req, res)=> {
-    res.send("Home api testing");   
+    res.send("home")
 })
 
 
