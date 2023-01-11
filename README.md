@@ -13,6 +13,15 @@ The motto of this web app is to bring growth in agricultural field
 - Predict & manage crop failure (using soil APIs and an automated management system).
 
 
+
+### Team / Collaborators
+<a href="https://github.com/aksharma27/farmup/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=aksharma27/farmup" />
+</a>
+
+
+
+
 ![farmup logo](logo.jpg)
 
 ### Contribute
@@ -27,3 +36,4 @@ Steps to collaborate:
 - add your config.env file in the root directory and add the mongodb connection link to  it(make sure the variable name is DB in config.env file or you can use any other name and export is by that name in app.js file in root directory).
 - you're ready to go, add new features or changes, add and commit your changes, then make a pull request by the following command. 
   [ git push -u origin your branch name ]
+  
