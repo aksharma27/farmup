@@ -15,14 +15,15 @@ The motto of this web app is to bring growth in agricultural field
 
 
 ### Team / Collaborators
+-Abhishek Kumar Sharma(Back-end & Front-end).
+-Akash Parida (Front-end).
+-Shubhankar Patel(Front-end, UI/UX).
+-Devdutt Mohapatra(Project Maintainer).
 <a href="https://github.com/aksharma27/farmup/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=aksharma27/farmup" />
 </a>
 
--Abhishek Kumar Sharma(Back-end & Front-end)
--Akash Parida (Front-end)
--Shubhankar Patel(Front-end, UI/UX)
--Devdutt Mohapatra(Project Maintainer)
+
 
 
 
