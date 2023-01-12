@@ -7,14 +7,14 @@ var passport = require("passport"),
 
 dotenv.config({path: "./config.env"});
 const PORT = process.env.PORT || 3000;
-const DB = process.env.DB;
+// const DB = process.env.DB;
 const dbconn = require("./config/db");
 // const passport = require("passport");
 
 
 
 
-// dbconn();
+dbconn();
 const app = express();
 
 //passports
@@ -30,13 +30,14 @@ app.get('/home', (req, res)=> {
     res.render('index')
 });
 
-<<<<<<< HEAD
+
 app.get('/signup-farmer', (req, res)=> {
     res.render("signup-admin");
 });
 app.get('/login-farmer', (req, res)=>{
     res.render('');
-=======
+});
+
 app.get('/api/home', (req, res)=> {
     res.render("index");
 });
@@ -52,7 +53,6 @@ app.get('/login-admin', (req, res)=>{
 });
 app.get('/signup-admin', (req, res)=>{
     res.render('signupadmin');
->>>>>>> c239225527747384a0a33d2d12ecc4914ee704ce
 });
 
 app.get('/signup-user', (req, res) => {
@@ -64,6 +64,6 @@ app.post
 
 
 
-app.listen(3000 , ()=> {
+app.listen(PORT , ()=> {
     console.log(`listening on ${PORT}`);
 });
