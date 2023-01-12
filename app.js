@@ -14,7 +14,7 @@ const dbconn = require("./config/db");
 
 
 
-dbconn();
+// dbconn();
 const app = express();
 
 //passports
@@ -30,11 +30,29 @@ app.get('/home', (req, res)=> {
     res.render('index')
 });
 
+<<<<<<< HEAD
 app.get('/signup-farmer', (req, res)=> {
     res.render("signup-admin");
 });
 app.get('/login-farmer', (req, res)=>{
     res.render('');
+=======
+app.get('/api/home', (req, res)=> {
+    res.render("index");
+});
+
+app.get('/signup-buyer', (req, res)=> {
+    res.render('signinbuyer');
+});
+app.get('/login-buyer', (req, res)=> {
+    res.render('signinbuyer');
+});
+app.get('/login-admin', (req, res)=>{
+    // res.render('signupadmin');
+});
+app.get('/signup-admin', (req, res)=>{
+    res.render('signupadmin');
+>>>>>>> c239225527747384a0a33d2d12ecc4914ee704ce
 });
 
 app.get('/signup-user', (req, res) => {
@@ -46,6 +64,6 @@ app.post
 
 
 
-app.listen(PORT, ()=> {
+app.listen(3000 , ()=> {
     console.log(`listening on ${PORT}`);
 });
