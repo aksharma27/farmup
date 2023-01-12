@@ -9,7 +9,7 @@ const dbconn = require("./config/db");
 
 
 
-dbconn();
+// dbconn();
 const app = express();
 app.use(express.json());
 // app.use(express.urlencoded("extended: true"));
@@ -29,6 +29,6 @@ app.get('/api/home', (req, res)=> {
 
 
 
-app.listen(PORT, ()=> {
+app.listen(3000 , ()=> {
     console.log(`listening on ${PORT}`);
 });
