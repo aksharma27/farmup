@@ -28,4 +28,3 @@ const adminSchema = new mongoose.Schema({
 const Admin = new mongoose.Model("Admin", adminSchema);
 
 module.exports = Admin;
-   
