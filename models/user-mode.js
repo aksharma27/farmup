@@ -15,7 +15,6 @@ const userSchema = new mongoose.Schema({
     },
     bid_price: {
         type: Number,
-        required: true
     },
 });
 

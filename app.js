@@ -12,7 +12,7 @@ const dbconn = require("./config/db");
 dbconn();
 const app = express();
 app.use(express.json());
-app.use(express.urlencoded("extended: true"));
+// app.use(express.urlencoded("extended: true"));
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
@@ -22,7 +22,7 @@ app.get('/api/test', (req, res)=> {
 });
 
 app.get('/api/home', (req, res)=> {
-    res.send("home")
+    res.render("index");
 })
 
 
