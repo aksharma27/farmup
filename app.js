@@ -23,7 +23,20 @@ app.get('/api/test', (req, res)=> {
 
 app.get('/api/home', (req, res)=> {
     res.render("index");
-})
+});
+
+app.get('/signup-buyer', (req, res)=> {
+    res.render('signinbuyer');
+});
+app.get('/login-buyer', (req, res)=> {
+    res.render('signinbuyer');
+});
+app.get('/login-admin', (req, res)=>{
+    // res.render('signupadmin');
+});
+app.get('/signup-admin', (req, res)=>{
+    res.render('signupadmin');
+});
 
 
 
