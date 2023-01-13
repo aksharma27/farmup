@@ -101,6 +101,13 @@ nav button{
     }
 }
 
+@media screen and (max-width: 830px) {
+    .form-img{
+        margin-top: 50%;
+        height: 60%;
+    }
+}
+
 @media screen and (max-width: 727px) {
     #form-img-container{
         display: none;
