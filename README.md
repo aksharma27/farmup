@@ -16,7 +16,7 @@ The motto of this web app is to bring growth in agricultural field
 
 ### Team Members
 - [Abhishek Kumar Sharma](https://www.github.com/aksharma27)(Back-end, Front-end, Database).
-- [Akash Parida](https://wwww.github.com/Akash-akp) (Front-end).
+- [Akash Parida](https://github.com/Akash-akp) (Front-end).
 - Shubhankar Patel(Front-end, UI/UX).
 - Devdutt Mohapatra(Project Maintainer).
 

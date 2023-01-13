@@ -12,11 +12,8 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String, 
         required: true,
-    },
-    bid_price: {
-        type: Number,
-    },
-});
+    }
+}, {timestamps: 'createdAt', updatedAt: 'updatedAt', collection: 'users'});
 
 const User = new mongoose.model("User", userSchema);
 
