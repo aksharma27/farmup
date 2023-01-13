@@ -1,6 +1,18 @@
 body{
-    background-color: rgb(220, 248, 233);
+    background: linear-gradient(-45deg, rgb(200, 221, 117),green,rgb(200, 221, 117));
+    background-size: 200% 200%;
+    animation: ani 6s infinite alternate ease-in-out;
+    /* background-image: url("../images/wallform.jpg"); */
     overflow-y: hidden;
+}
+
+@keyframes ani{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 100% 100%;
+    }
 }
 
 nav{
@@ -43,19 +55,87 @@ nav button{
     margin: 10vh 5vw;
     background-color: white;
     box-shadow: 0px 0px 18px 2px rgb(202, 202, 202);
+    padding: 5vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    border-radius: 10px;
+    align-items: center;
 }
 
 #form-container form{
     text-align: center;
+    width: 30vw;
+    min-width: 288px;
+    margin: 4% 9%;
 }
 
 #form-container label,#form-container input{
     display: block;
 }
 
+#form-img-container{
+    position: relative;
+    width: 722px;
+    height: 70vh;
+    overflow: hidden;
+}
+
 .form-img{
-    height: 80vh;
-    
+    /* margin-top: 4%; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+@media screen and (max-width: 1114px) {
+    .form-img{
+        margin-top: 15%;
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .form-img{
+        margin-top: 40%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 727px) {
+    #form-img-container{
+        display: none;
+    }
+}
+
+.next{
+    left: 724px;
+}
+
+.animate{
+    transition: all 0.5s;
+    left: 0px;
+}
+
+form h1{
+    margin: 20px 0px 50px 0px;
+    color: darkgreen;
+}
+
+form input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black;
+    margin: 20px 0px;
+    outline: none;
+    font-size: 20px;
+}
+
+form button{
+    width: 100%;
+    margin: 20px 0px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: darkgreen;
+    color: white;
+    border: 1px solid black;
 }

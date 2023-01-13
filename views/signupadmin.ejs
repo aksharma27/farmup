@@ -16,19 +16,28 @@
             Sign Up
         </button>
     </nav>
-    <div id="form-container">
-        <div>
-            <img src="images/signup-img.png" class="d-block w-100 form-img" alt="...">
+    <div id="form-container" >
+        <div id="form-img-container">
+            <div id="slide-imgs">
+                <img src="images/signup-img.png" class="form-img curr" alt="">
+                <img src="images/signup-img3.jpeg" class="form-img next" alt="">
+                <img src="images/signup-img4.jpeg" class="form-img next" alt="">
+            </div>
         </div>
         <form action="">
             <h1>Sign Up</h1>
-            <label for="name">Name</label>
-            <input type="text" name="name">
-            <label for="email">Email</label>
-            <input type="email" name="email">
-            <label for="phoneno">Phone no.</label>
-            <input type="tel">
+            <!-- <label for="name" class="">Name</label> -->
+            <input type="text" name="name" placeholder="User Name">
+            <!-- <label for="email">Email</label> -->
+            <input type="email" name="email" placeholder="Email">
+            <!-- <label for="phoneno">Phone no.</label> -->
+            <!-- <input type="tel" placeholder="Phone no."> -->
+            <input type="password" placeholder="Create Password">
+            <input type="password" placeholder="Confirm Password">
+            <button type="submit">Register</button>
+            <p>If you already a user? <a href="">log in</a></p>
         </form> 
     </div>
 
     </div>
+    <script src="js/signup.js"></script>
